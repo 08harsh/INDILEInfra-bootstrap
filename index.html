@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="new.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <style>
+        :root {
+            --background: #FEFAE6;
+            --dominant-color: #F0C808;
+            --primary-color: #7FB069;
+            --secondary-color: #4D5E85;
+            --success-color: #24C279;
+            --danger-color: #C42231;
+            --warning-color: #E6AD00;
+            --info-color: #0CB8DA;
+            --background-text: #000000;
+            --dominant-text: #000000;
+            --primary-text: #000000;
+            --secondary-text: #FFFFFF;
+            --success-text: #000000;
+            --danger-text: #FFFFFF;
+            --warning-text: #000000;
+            --info-text: #FFFFFF;
+        }
+    </style>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .property-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .property-card {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .property-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .property-details {
+            padding: 10px;
+        }
+
+        .property-details h2 {
+            margin: 0;
+            font-size: 18px;
+        }
+
+        .property-details p {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+    </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer p {
+            margin: 0;
+        }
+    </style>
+
+
+
+
+
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="R1.webp" alt="INDILE" width="35" height="30" alt="Hover Image" class="hover-img">
+            </a>
+            <a class=" navbar-brand fs-1" href="#"><span class="text-primary">INDILE Infra</span> </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-3 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#About">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Works
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="projects.html">Projects</a></li>
+                            <li><a class="dropdown-item" href="#">Workspaces</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a class="dropdown-item" href="#">Feedback</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="Contact.html">Contact </a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-outline-success" type="submit">
+                        Search
+                    </button>
+                </form>
+                <a href="log.html">
+                    <button class="btn btn-outline-danger mx-1" type="..." >
+                        Login
+                    </button>
+                </a>
+         
+            </div>
+        </div>
+    </nav>
+
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="1 copy.jpeg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Best Designs</h5>
+                    <p>Exclusive </p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="photo-1505521586751-90af6a8d5efa.jpeg" class="d-block w-100 " alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>RENTALS</h5>
+                    <p>Renting just became Easy</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="com.webp" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Commercilas</h5>
+                    <p>Explore Commercial properties at best prices</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+
+
+    <section class="About my-5" id="About">
+        <div class="container-fluid text-center">
+            <div>
+                <h1 data-aos="fade-up" data-aos-offset="250">
+                    <sapn class="text-primary">About</sapn>
+                </h1>
+                <hr / class="w-25 m-auto">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-6 col-12" data-aos="zoom-in-left" data-aos-offset="300">
+                <h1 class="text-center my-5"><span class="text-primary">ExploreUS</span> </h1>
+                <p class="p-2 align-items-center">
+                    INDILE Infra is one of the largest and most comprehensive real estate websites in the India.
+                    It provides listings for homes for sale and rent, as well as information on home values,
+                    neighborhoods,
+                    and more.
+                </p>
+                <button class="btn btn-primary my-3" type="submit">INDILE Infra </button>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Expertise and Experience:
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>Marketing and Sales: We suggest effective marketing strategies for selling or
+                                    leasing properties, including online listings, staging, and networking.</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Client-Centric Approach:
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>We have
+                                    professionals and experts in the field for specific advice and guidance
+                                    tailored to our client's individual circumstances and goals.</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Local Market Knowledge:
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong> We analyze market trends, including fluctuations in property values, demand
+                                    for certain types of properties, and emerging markets.</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-sm-12 col-md-6 col-lg-6 col-12" data-aos="fade-right" data-aos-offset="300">
+
+                <img src="rs.jpeg" class="img-fluid img-thumbnail img-hover my-5">
+
+            </div>
+        </div>
+    </section>
+
+    <section class="Our Services my-5 py-5 bg-light">
+        <div class="container text-center">
+            <div>
+                <h1 data-aos="fade-up" data-aos-offset="250">
+                    <sapn class="text-primary">Our Services</sapn>
+                </h1>
+                <hr class="w-25 m-auto">
+            </div>
+
+            <div class="row my-5 align-items-center">
+                <div class="col-sm-12 col-md-4 col-lg-4 col-12"></div>
+                <div class="card" style="width: 18rem; background-color: #0CB8DA;" data-aos="fade-up"
+                    data-aos-offset="300">
+                    <img src="rent1.webp" class="card-img-top-object-fit-cover border rounded my-3" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"><span class="text-primary"> RENT A HOME </span></h5>
+                        <p class="card-text">Rental Homes for Everyone</p>
+                        <a href="#" class="btn btn-primary">Explore</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row my-5 align-items-center">
+                <div class="col-sm-12 col-md-4 col-lg-4 col-12"></div>
+                <div class="card" style="width: 18rem; background-color:#ccc;" data-aos="fade-up">
+                    <img src="land1.jpeg" class="card-img-top-object-fit-cover border rounded my-3" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"><span class="text-primary"> Buy Land/Plots </span></h5>
+                        <p class="card-text">
+                            Explore Residential, Agricultural, Industrial and Commercial Plots/Land</p>
+                        <a href="#" class="btn btn-primary">Explore</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row my-5 align-items-center">
+                <div class="col-sm-12 col-md-4 col-lg-4 col-12"></div>
+                <div class="card" style="width: 18rem; background-color:#FEFAE6;" data-aos="fade-up">
+                    <img src="com.webp" class="card-img-top-object-fit-cover border rounded my-3" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"><span class="text-primary"> Buy for Commercial use </span></h5>
+                        <p class="card-text">Explore from Office Spaces, Co-working spaces, Retail Shops, Land,
+                            Factories and more</p>
+                        <a href="#" class="btn btn-primary">Explore</a>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+
+
+
+
+
+        </div>
+    </section>
+
+    <section class="Our Services my-5 py-5 bg-light">
+        <div class="container text-center">
+            <div>
+                <h1>
+                    <sapn class="text-primary" my-2>Benefits</sapn>
+                </h1>
+                <hr class="w-25 m-auto my-2">
+            </div>
+
+
+            <div class="wrapper">
+                <div class="b_card my-4">
+                    <div class="b__card__title aos-init aos-animate" data-aos="fade-up"><span class="text-primary">Well
+                            ordered car parking </span></div>
+                    <div class="b__card__p aos-init aos-animate" data-aos="fade-up">Complex territory provides as
+                        on-ground,
+                        so underground car parking. For comfort of residents, each dwelling house will have an isolated
+                        underground parking. And in total complex will have 160 parking places. </div>
+                </div>
+            </div>
+            <div class="b__card my-4">
+
+                <div class="b__card__title aos-init aos-animate" data-aos="fade-up"><span
+                        class="text-primary">Recreation and green spaces</span> </div>
+                <div class="b__card__p aos-init aos-animate" data-aos="fade-up">The most important element is that it meets the concept of modern district, is large number of green spaces.
+                    Territory has trees-plants counted for 4 seasons, and recreation spaces, what creates additional
+                    comfort to complex residents. </div>
+            </div>
+            <div class="b__card my-4">
+
+                <div class="b__card__title aos-init aos-animate" data-aos="fade-up"><span class="text-primary">Safety
+                        24/7</span> </div>
+                <div class="b__card__p aos-init aos-animate" data-aos="fade-up">For the safety of residents of the Society
+                    , we have 24 hours security service and video monitoring.</div>
+            </div>
+
+
+
+            <div class="b__card my-4">
+
+                <div class="b__card__title aos-init aos-animate" data-aos="fade-up"><span
+                        class="text-primary">Kindergarten</span></div>
+                <div class="b__card__p aos-init aos-animate" data-aos="fade-up">There is a kindergarten functioning  thus making the complex attractive for parents of minor children.
+                </div>
+            </div>
+            <div class="b__card my-4">
+
+                <div class="b__card__title aos-init aos-animate" data-aos="fade-up"><span class="text-primary">Sport
+                        spaces</span> </div>
+                <div class="b__card__p aos-init aos-animate" data-aos="fade-up">Dwelling complex is counted for comfort
+                    of those who follows healthy lifestyle. There will be placed as
+                    tennis -court, so sport spaces, where sportsmen will be able to spend their free time.
+                    While projecting the complex, we also thought of spaces for children. On the 1000 sq.m. area there
+                    will be arranged a playground for children which will meet all standards necessary for safety of
+                    children. </div>
+            </div>
+            <div class="b__card my-4">
+
+                <div class="b__card__title aos-init aos-animate" data-aos="fade-up"><span
+                        class="text-primary">Commercial areas </span></div>
+                <div class="b__card__p aos-init aos-animate" data-aos="fade-up">In the new district,  there will be placed many commercial objects in one space. Complex will have
+                    supermarket, cafe and drugstore, enabling the residents  to access needed services in
+                    one space. </div>
+            </div>
+        </div>
+        </div>
+
+
+        </div>
+    </section>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <div class="footer">
+        <p>&copy; 2024 INDILE Infra. All rights reserved.</p>
+        <p>Contact us: info@indileinfra.com | 123-456-7890</p>
+    </div>
+</body>
+
+
+</html>
